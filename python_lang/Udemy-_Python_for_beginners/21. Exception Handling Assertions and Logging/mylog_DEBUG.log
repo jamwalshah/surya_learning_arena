@@ -3,3 +3,7 @@ ERROR:root:Error
 WARNING:root:Warning
 INFO:root:Info
 DEBUG:root:Debug
+DEBUG:parso.cache:pickle loaded: c:\users\surya\appdata\local\programs\python\python39\lib\logging\__init__.py
+DEBUG:parso.cache:pickle loaded: c:\users\surya\appdata\local\programs\python\python39\lib\site-packages\jedi\third_party\typeshed\stdlib\2and3\logging\__init__.pyi
+DEBUG:parso.cache:pickle loaded: c:\users\surya\appdata\local\programs\python\python39\lib\site-packages\jedi\third_party\typeshed\stdlib\3\builtins.pyi
+DEBUG:parso.cache:pickle loaded: c:\users\surya\appdata\local\programs\python\python39\lib\site-packages\jedi\third_party\typeshed\stdlib\3\sys.pyi
