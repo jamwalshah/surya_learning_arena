@@ -1,0 +1,23 @@
+Certification details
+Microsoft Certified: Azure Fundamentals
+https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/
+
+
+
+LEARNING PATH
+Microsoft Azure Fundamentals: Describe cloud concepts
+https://learn.microsoft.com/en-us/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/
+
+LEARNING PATH
+Microsoft Azure Fundamentals: Describe Azure architecture and services
+https://learn.microsoft.com/en-us/training/paths/azure-fundamentals-describe-azure-architecture-services/
+
+LEARNING PATH
+Microsoft Azure Fundamentals: Describe Azure management and governance
+https://learn.microsoft.com/en-us/training/paths/describe-azure-management-governance/
+
+
+
+Certification exams
+Exam AZ-900: Microsoft Azure Fundamentals
+https://learn.microsoft.com/en-us/credentials/certifications/exams/az-900/
