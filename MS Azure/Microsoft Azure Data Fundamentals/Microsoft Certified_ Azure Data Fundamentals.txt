@@ -1,0 +1,45 @@
+Certification details
+Microsoft Certified: Azure Data Fundamentals
+https://learn.microsoft.com/en-us/credentials/certifications/azure-data-fundamentals/
+
+
+MODULE
+Explore core data concepts
+https://learn.microsoft.com/en-us/training/modules/explore-core-data-concepts/
+
+MODULE
+Explore data roles and services
+https://learn.microsoft.com/en-us/training/modules/explore-roles-responsibilities-world-of-data/
+
+MODULE
+Explore fundamental relational data concepts
+https://learn.microsoft.com/en-us/training/modules/explore-relational-data-offerings/
+
+MODULE
+Explore relational database services in Azure
+https://learn.microsoft.com/en-us/training/modules/explore-provision-deploy-relational-database-offerings-azure/
+
+MODULE
+Explore Azure Storage for non-relational data
+https://learn.microsoft.com/en-us/training/modules/explore-provision-deploy-non-relational-data-services-azure/
+
+MODULE
+Explore fundamentals of Azure Cosmos DB
+https://learn.microsoft.com/en-us/training/modules/explore-non-relational-data-stores-azure/
+
+MODULE
+Explore fundamentals of large-scale analytics
+https://learn.microsoft.com/en-us/training/modules/examine-components-of-modern-data-warehouse/
+
+MODULE
+Explore fundamentals of real-time analytics
+https://learn.microsoft.com/en-us/training/modules/explore-fundamentals-stream-processing/
+
+MODULE
+Explore fundamentals of data visualization
+https://learn.microsoft.com/en-us/training/modules/explore-fundamentals-data-visualization/
+
+
+Certification exams
+Exam DP-900: Microsoft Azure Data Fundamentals
+https://learn.microsoft.com/en-us/credentials/certifications/exams/dp-900/
