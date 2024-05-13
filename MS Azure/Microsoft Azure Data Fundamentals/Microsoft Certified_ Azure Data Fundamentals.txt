@@ -1,44 +1,62 @@
 Certification details
 Microsoft Certified: Azure Data Fundamentals
 https://learn.microsoft.com/en-us/credentials/certifications/azure-data-fundamentals/
+----------------------------------------------------------------------------------------------------------------------------
+LEARNING PATH 01
+Microsoft Azure Data Fundamentals: Explore core data concepts
+https://learn.microsoft.com/en-us/training/paths/azure-data-fundamentals-explore-core-data-concepts/
 
-
-MODULE
+MODULE 01.01
 Explore core data concepts
 https://learn.microsoft.com/en-us/training/modules/explore-core-data-concepts/
 
-MODULE
+MODULE 01.02
 Explore data roles and services
 https://learn.microsoft.com/en-us/training/modules/explore-roles-responsibilities-world-of-data/
+----------------------------------------------------------------------------------------------------------------------------
 
-MODULE
+LEARNING PATH 02
+Microsoft Azure Data Fundamentals: Explore relational data in Azure
+https://learn.microsoft.com/en-us/training/paths/azure-data-fundamentals-explore-relational-data/
+
+MODULE 02.01
 Explore fundamental relational data concepts
 https://learn.microsoft.com/en-us/training/modules/explore-relational-data-offerings/
 
-MODULE
+MODULE 02.02
 Explore relational database services in Azure
 https://learn.microsoft.com/en-us/training/modules/explore-provision-deploy-relational-database-offerings-azure/
+----------------------------------------------------------------------------------------------------------------------------
 
-MODULE
+LEARNING PATH 03
+Microsoft Azure Data Fundamentals: Explore non-relational data in Azure
+https://learn.microsoft.com/en-us/training/paths/azure-data-fundamentals-explore-non-relational-data/
+
+MODULE 03.01
 Explore Azure Storage for non-relational data
 https://learn.microsoft.com/en-us/training/modules/explore-provision-deploy-non-relational-data-services-azure/
 
-MODULE
+MODULE 03.02
 Explore fundamentals of Azure Cosmos DB
 https://learn.microsoft.com/en-us/training/modules/explore-non-relational-data-stores-azure/
+----------------------------------------------------------------------------------------------------------------------------
 
-MODULE
+LEARNING PATH 04
+Microsoft Azure Data Fundamentals: Explore data analytics in Azure
+https://learn.microsoft.com/en-us/training/paths/azure-data-fundamentals-explore-data-warehouse-analytics/
+
+MODULE 04.01
 Explore fundamentals of large-scale analytics
 https://learn.microsoft.com/en-us/training/modules/examine-components-of-modern-data-warehouse/
 
-MODULE
+MODULE 04.02
 Explore fundamentals of real-time analytics
 https://learn.microsoft.com/en-us/training/modules/explore-fundamentals-stream-processing/
 
-MODULE
+MODULE 04.03
 Explore fundamentals of data visualization
 https://learn.microsoft.com/en-us/training/modules/explore-fundamentals-data-visualization/
-
+----------------------------------------------------------------------------------------------------------------------------
 
 Certification exams
 Exam DP-900: Microsoft Azure Data Fundamentals
