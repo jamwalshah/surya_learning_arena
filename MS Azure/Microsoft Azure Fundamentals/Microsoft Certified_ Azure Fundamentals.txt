@@ -1,21 +1,66 @@
 Certification details
 Microsoft Certified: Azure Fundamentals
 https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/
+----------------------------------------------------------------------------------------------------------------------------
 
-
-
-LEARNING PATH
+LEARNING PATH 01
 Microsoft Azure Fundamentals: Describe cloud concepts
 https://learn.microsoft.com/en-us/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/
 
-LEARNING PATH
+MODULE 01.01
+Describe cloud computing
+https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/
+
+MODULE 01.02
+Describe the benefits of using cloud services
+https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/
+
+MODULE 01.03
+Describe cloud service types
+https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/
+----------------------------------------------------------------------------------------------------------------------------
+
+LEARNING PATH 02
 Microsoft Azure Fundamentals: Describe Azure architecture and services
 https://learn.microsoft.com/en-us/training/paths/azure-fundamentals-describe-azure-architecture-services/
 
-LEARNING PATH
+MODULE 02.01
+Describe the core architectural components of Azure
+https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/
+
+MODULE 02.02
+Describe Azure compute and networking services
+https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/
+
+MODULE 02.03
+Describe Azure storage services
+https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/
+
+MODULE 02.04
+Describe Azure identity, access, and security
+https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/
+----------------------------------------------------------------------------------------------------------------------------
+
+LEARNING PATH 03
 Microsoft Azure Fundamentals: Describe Azure management and governance
 https://learn.microsoft.com/en-us/training/paths/describe-azure-management-governance/
 
+MODULE 03.01
+Describe cost management in Azure
+https://learn.microsoft.com/en-us/training/modules/describe-cost-management-azure/
+
+MODULE 03.02
+Describe features and tools in Azure for governance and compliance
+https://learn.microsoft.com/en-us/training/modules/describe-features-tools-azure-for-governance-compliance/
+
+MODULE 03.03
+Describe features and tools for managing and deploying Azure resources
+https://learn.microsoft.com/en-us/training/modules/describe-features-tools-manage-deploy-azure-resources/
+
+MODULE 03.04
+Describe monitoring tools in Azure
+https://learn.microsoft.com/en-us/training/modules/describe-monitoring-tools-azure/
+----------------------------------------------------------------------------------------------------------------------------
 
 
 Certification exams
