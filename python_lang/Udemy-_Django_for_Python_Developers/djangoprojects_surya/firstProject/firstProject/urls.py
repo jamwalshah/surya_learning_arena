@@ -16,10 +16,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from firstApp import views
+# from firstApp import views as fa
+# from quoteApp import views as qa
+from firstApp.views import display
+from firstApp.views import displayDateTime
+from quoteApp.views import displayQuote
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path(route='hello/', view=views.display),
-    path(route='datetime/', view=views.displayDateTime),
+    path(route='hello/', view=display),
+    path(route='datetime/', view=displayDateTime),
+    path(route='quote', view=displayQuote),
 ]
