@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html>
     <head>
         <title>Employee Information</title>
@@ -9,5 +10,6 @@
             <li>Name: {{ name }}</li>
             <li>Salary: {{ sal }}</li>
         </ol>
+        <img src="{% static 'images/artwork.jpg' %}" />
     </body>
 </html>
