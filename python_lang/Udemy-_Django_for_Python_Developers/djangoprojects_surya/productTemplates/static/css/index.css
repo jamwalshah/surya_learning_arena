@@ -1,0 +1,14 @@
+img{
+    border: yellow medium 5rem;
+    height: 100px;
+    width: 1080px;
+    margin: 0 auto;
+    display: block;
+}
+h1{
+    color: brown;
+    background-color: gold;
+    width: max-content;
+    text-align: center;
+    margin: 5px auto;
+}

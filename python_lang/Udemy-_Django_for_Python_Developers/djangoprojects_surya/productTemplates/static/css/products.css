@@ -1,0 +1,14 @@
+img{
+    border: blue medium 5rem;
+    height: 100px;
+    width: 1080px;
+    margin: 0% 20%;
+    align-items: flex-start;
+}
+h1{
+    color: grey;
+    background-color: gold;
+    width: max-content;
+    text-align: center;
+    margin: 5px auto;
+}
