@@ -27,5 +27,3 @@ class LoginForm(forms.Form):
         # if len(inputPassword)<8:
         #     raise forms.ValidationError(message='Password should be at-least 8 characters long')
         return inputPassword
-
-    
