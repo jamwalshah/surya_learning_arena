@@ -2,14 +2,6 @@ from django import forms
 from django.core import validators
 import re
 
-def clean_password(self):
-    inputPassword = self.cleaned_data["password"]
-    if not re.search(pattern=r'[A-Z]', string=inputPassword):
-        raise forms.ValidationError(message='Password must contain at-least one uppercase letter')
-    # if len(inputPassword)<8:
-    #     raise forms.ValidationError(message='Password should be at-least 8 characters long')
-    return inputPassword
-
 class LoginForm(forms.Form):
     """
     LoginForm:
@@ -27,6 +19,13 @@ class LoginForm(forms.Form):
         #         regex=r'^(?=.+[A-Z])[^\s]+$',
         #         message='Password must contain at-least one uppercase letter')]
         )
-
+    
+    def clean_password(self):
+        inputPassword = self.cleaned_data["password"]
+        if not re.search(pattern=r'[A-Z]', string=inputPassword):
+            raise forms.ValidationError(message='Password must contain at-least one uppercase letter')
+        # if len(inputPassword)<8:
+        #     raise forms.ValidationError(message='Password should be at-least 8 characters long')
+        return inputPassword
 
     
