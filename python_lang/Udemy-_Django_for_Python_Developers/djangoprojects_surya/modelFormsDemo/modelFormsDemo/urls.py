@@ -16,7 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from modelForms import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path(route='', view=views.index), # empty route means root path of app
+    path(route='listProjects/', view=views.listProjects),
+    path(route='addProject/', view=views.addProject),
 ]
