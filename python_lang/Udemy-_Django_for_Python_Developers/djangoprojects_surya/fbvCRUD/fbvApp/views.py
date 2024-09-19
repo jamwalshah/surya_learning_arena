@@ -15,3 +15,8 @@ def createStudent(request):
             form.save()
         return redirect(to='/')
     return render(request=request, template_name='fbvApp/create.html', context={'form':form})
+
+def deleteStudent(request, id):
+    student = Student.objects.get(id=id)
+    student.delete()
+    return redirect(to='/')
