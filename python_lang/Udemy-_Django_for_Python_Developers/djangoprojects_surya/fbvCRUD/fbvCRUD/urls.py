@@ -23,4 +23,5 @@ urlpatterns = [
     path(route='', view=views.getStudents),
     path(route='create/', view=views.createStudent),
     path(route='delete/<int:id>', view=views.deleteStudent),
+    path(route='update/<int:id>', view=views.updateStudent),
 ]

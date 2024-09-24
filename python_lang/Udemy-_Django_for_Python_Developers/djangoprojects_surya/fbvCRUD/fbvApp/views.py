@@ -10,7 +10,7 @@ def getStudents(request):
 def createStudent(request):
     form = StudentForm()
     if request.method == 'POST':
-        form = StudentForm(request.POST)
+        form = StudentForm(data=request.POST)
         if form.is_valid():
             form.save()
         return redirect(to='/')
@@ -23,9 +23,10 @@ def deleteStudent(request, id):
 
 def updateStudent(request, id):
     student = Student.objects.get(id=id)
+    form = StudentForm(instance=student)
     if request.method == 'POST':
-        form = StudentForm(data=request.post, instance=student)
+        form = StudentForm(data=request.POST, instance=student)
         if form.is_valid():
             form.save()
             return redirect(to='/')
-    return render(request=request, template_name='fbvApp/update.html', context={'student':student})
+    return render(request=request, template_name='fbvApp/update.html', context={'form':form})
