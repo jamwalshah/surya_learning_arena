@@ -20,5 +20,5 @@ from cbvApp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path(route='', view=views.GreetingView.as_view()),
+    path(route='', view=views.GreetingView.as_view(greetingMessage = '<h1>Hello from the as_view method</h1>')),
 ]
