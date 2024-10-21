@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic import ListView, DetailView
+from django.views.generic import ListView, DetailView, CreateView
 from cbvApp.models import Student
 
 # Create your views here.
@@ -19,3 +19,12 @@ class StudentDetailView(DetailView):
     # default template_name is student_detail.html
     # context_object_name = 'student'
     # default context_object_name is student
+
+
+class StudentCreateView(CreateView):
+    model = Student
+    fields = ('firstName', 'lastName', 'testScore')
+    # template_name = 'student_form.html'
+    # default template_name is student_form.html
+    # context_object_name = 'form'
+    # default context_object_name is form
