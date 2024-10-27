@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>{{ display_view_name }} Course</title>
+    </head>
+    {% comment %} title and h1 tag is dynamic depending on view_name {% endcomment %}
+    <body>
+        <h1>{{ display_view_name }} Course</h1>
+        <form method="post">
+            {{ form.as_p }}
+            {% csrf_token %}
+            <input type="submit" value="Save">
+            {% if display_view_name == "Create" %}
+                <a href="/courses">Go back to Course List</a>
+            {% else %}
+                <a href="/{{ course.id }}">Cancel Update</a>
+            {% endif %}
+        </form>
+    </body>
+</html>

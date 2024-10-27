@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Course List</title>
+    </head>
+    <body>
+        <h1>Courses List</h1>
+        {% if course_list %}
+        <table border=2>
+            <thead>
+                <th>Id</th>
+                <th>Course Name</th>
+                <th>Instructor</th>
+            </thead>
+            {% for course in course_list %}
+            <tr>
+                <td><a href="/{{ course.id }}">{{ course.id }}</a></td>
+                <td>{{ course.name }}</td>
+                <td>{{ course.instructor }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        {% else %}
+        <p>No Courses Found</p>
+        {% endif %}
+        <br/><br/><br/>
+        <a href="/create">Add Course</a>
+    </body>
+</html>

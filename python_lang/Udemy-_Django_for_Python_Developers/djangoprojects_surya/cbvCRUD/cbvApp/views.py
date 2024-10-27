@@ -35,11 +35,12 @@ class StudentUpdateView(UpdateView):
     """UpdateView definition for view to update testScore from Student Model"""
     model = Student
     fields = ('testScore', )
-    # template_name = ".html"
+    # template_name = "student_form.html"
     # context_object_name = 'form'
 
 class StudentDeleteView(DeleteView):
+    """DeleteView definition for view to delete from Student Model"""
     model = Student
     success_url = reverse_lazy(viewname='students')
-    # template_name = ".html"
+    # template_name = "student_confirm_delete.html"
     # context_object_name = 'student'
