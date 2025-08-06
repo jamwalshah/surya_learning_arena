@@ -70,7 +70,7 @@
         - GROUP BY, HAVING clauses
     02. Comparison Functions
         - `ISNULL()`, `LEAST(column1, column2)`, `GREATEST(column1, column2)`, `IN`, `BETWEEN`, `LIKE`, `COALESCE(expr1, expr2, ..., exprN)`
-    02. String Functions: `concat()`, `instr()`, `length()`, `char_length()`, `left(column_name, number_of_characters)`, `right(column_name, number_of_characters)`, `substring(string, start_position [, length=end])`, `substring_index(string, delimiter, count)`, `lower(string)`, `upper(string)`, `lpad(string, length, pad_string)`, `rpad(string, length, pad_string)`, `ltrim(string)`, `rtrim(string)`, `trim(string)`, `replace(string, old_substring, new_substring)`, `find_in_set()`, `reverse(string)`, `locate(string)`, `initcap(string)`, 
+    02. String Functions: `concat()`, `instr()`, `length()`, `char_length()`, `left(column_name, number_of_characters)`, `right(column_name, number_of_characters)`, `substring(string, start_position [, length=end])`, `substring_index(string, delimiter, count)`, `lower(string)`, `upper(string)`, `lpad(string, length, pad_string)`, `rpad(string, length, pad_string)`, `ltrim(string)`, `rtrim(string)`, `trim(string)`, `replace(string, old_substring, new_substring)`, `find_in_set()`, `reverse(string)`, `locate(string)`, `initcap(string)`
     03. Math Functions: `abs(numeric_value)`, `floor(numeric_value)`, `round(numeric_value [, decimal_places])`, `truncate(numeric_value, decimal_places)`, `mod(numeric_expression, divisor)`, `pow(base, exponent)` or `power(base, exponent)`
     04. Control Flow Functions: `CASE...END`, `IF...ELSEIF...ELSE...END IF` or `IF(conditions, if_condition_true, if_condition_false)`, `IFNULL(expr1, expr2)`, `NULLIF(expr1, expr2)`
     05. Date and Time Functions: `NOW()` or `CURRENT_TIMESTAMP()`, `CURDATE()` or `CURRENT_DATE()`, `CURTIME(fsp)` or `CURRENT_TIME(fsp)`, `EXTRACT()`, `DATE_FORMAT()`, `STR_TO_DATE()`, `TIMESTAMP()`, `UNIX_TIMESTAMP()`, `FROM_UNIXTIME()`, `TIMESTAMPDIFF()`, `DATEDIFF()`, `TIMEDIFF()`, `DATE_ADD()`, `DATE_SUB()`, `ADDDATE()`, `SUBDATE()`
@@ -262,7 +262,7 @@
     4. Job Scheduling, Task Execution
     5. MapReduce Types
 6. Hadoop Cluster, Specification, Configuration
-7. Hadoop Administration- Security, Monitoring, Maintainence
+7. Hadoop Administration- Security, Monitoring, Maintenance
 8. Apache Hive SQL
     1. Apache Hive Architecture
     2. Apache Hive Programming
@@ -326,3 +326,96 @@
     4. MapReduce
 
 #### 02. Apache Airflow
+
+1. Airflow Fundamentals
+    1. Use cases: ETL, ML Pipelines, reporting, scheduling
+2. Airflow Architecture
+    1. Scheduler
+    2. Executor
+    3. Webserver
+    4. Metadata database
+    5. Workers
+3. Installation & Setup
+4. Directed Acyclic Graphs (DAGs)
+    1. Defining: `dag_id`, `schedule_interval`, `start_date`, `catchup`, `default_args`
+    2. Task Dependencies: `>>`, `<<`, `.set_downstream()`, `set_upstream()`
+    3. Scheduling vs. Triggering
+    4. AirFlow Scheduler
+    5. Trigger rules and retries
+    6. Task instance states
+    7. Parallelism and Concurrency
+    8. Pooling, Queuing, Priority Weights
+    9. SubDAGs (why they're often avoided)
+5. Operators and Tasks
+    1. Types of Operators: `BashOperator`, `PythonOperator`, `DummyOperator`, `EmailOperator`, `BranchPythonOperator`
+    2. Sensors: `TimeSensor`, `FileSensor`, `ExternalTaskSensor`
+    3. Tasks
+    4. Custom Operators and Tasks
+6. Variables, Connections and Cross-Communications (`XComs`)
+    1. Setting Up and using Connections (Database, AWS, Azure, etc.)
+    2. Secrets Management (Vault, etc.)
+    3. Cross-Communications (`XComs`) Basics
+    4. using `xcom_push` and `xcom_pull`
+    5. Cross-Communications best practices
+7. Monitoring and Logging
+    1. Airflow UI
+    2. Email Notification and alerts
+    3. Audit Trails and SLA misses
+8. Error Handling and Debugging
+    1. Retry strategies, `max_retries` and `on_failure_callback` functions
+    2. Debugging DAGs locally, Skipped or failed task recovery
+9. Deployment & CI/CD
+    1. using git for DAG versioning
+    2. deploying with Docker & Docker Compose
+    3. Helm Charts for Kubernetes deployment
+10. Airflow using cloud
+    1. Astronomer
+    2. Amazon MWAA
+    3. Google Compose
+
+### 04. ETL Data Pipelines
+
+- Data Warehousing for ETL Data Pipeline
+- Data Lake for ETL Data Pipeline
+- Apache Hive, Apache Airflow, Apache Beam
+
+#### 01. ETL Tools
+
+1. Data Ingestion
+    - Airbyte
+    - Fivetran
+    - Stitch
+2. Data Transformation
+    - dbt (Data Build Tool)
+    - Spark/PySpark
+3. Data Visualization
+    - Tableau
+    - Power BI
+    - Looker
+4. Data Quality
+    - Quick Expectations
+    - Soda
+5. ML Lifecycle
+      - mlflow
+
+#### 02. Data Orchestration Tools
+
+1. Pre-UNIX / Manual Era
+    1. Manual Trigger based workflows
+2. Early Computing Schedulers
+    1. CRON (Linux/UNIX based)
+    2. Windows Task Scheduler (`WTS`)
+    3. AutoSys (by Broadcom)
+    4. Control-M (by BMC)
+    5. Informatica (includes orchestration + ETL)
+3. Data & Open-Source Renaissance
+    1. Luigi (by Spotify, python-based DAGs)
+    2. Apache Oozie (Hadoop focused, XML based)
+    3. Apache Azkaban (by Linkedin, Hadoop focused)
+4. Modern Data Orchestration
+    1. Apache Airflow (most-popular, Python, DAG-based)
+    2. Prefect (modern Python orchestration, cloud-native)
+    3. Dagster (type-safe, development-focused orchestration)
+    4. Mage (simplified, modern Python orchestration)
+    5. Argo workflows (Kubernetes-native workflows)
+
