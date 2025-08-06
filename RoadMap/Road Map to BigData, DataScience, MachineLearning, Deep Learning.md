@@ -246,3 +246,83 @@
 1. Apache Hadoop
 2. Apache Spark
 3. Apache Flink
+
+#### 01. Apache Hadoop
+
+1. Hadoop Ecosystem
+2. Hadoop Distributed File System (`HDFS`)
+    1. HDFS Architecture
+    2. HDFS cmd-line & web-interface
+3. Hadoop event stream processing
+4. Complex Event Processing
+5. MapReduce
+    1. MapReduce Architecture [dataflow / architecture]
+    2. MapReduce Features
+    3. Shuffle & Sort
+    4. Job Scheduling, Task Execution
+    5. MapReduce Types
+6. Hadoop Cluster, Specification, Configuration
+7. Hadoop Administration- Security, Monitoring, Maintainence
+8. Apache Hive SQL
+    1. Apache Hive Architecture
+    2. Apache Hive Programming
+9. Apache HBase
+    1. Apache HBase Basics
+    2. Apache HBase Architecture
+    3. Java Client API
+    4. CRUD operations & Security
+10. Apache Zookeeper
+
+#### 02. Apache Spark
+
+1. Apache Spark Fundamentals
+    1. Spark Architecture
+    2. initializing Spark
+    3. RDDs
+        1. RDD operations
+        2. Key-Value Pairs
+        3. Shuffle Operations
+        4. RDD Persistence
+        5. Removing Data
+        6. RDD Operations
+            1. Transformations: map, flatMap, filter, etc.
+            2. Actions: count, reduce, reduceByKey, etc.
+        7. Shared Variables
+            1. Broadcast
+            2. Aggregators
+    4. Spark DataFrames / Spark SQL
+        1. Operations on DataFrames
+            - count, printSchema, show, select, filter, groupBy, registerTempTable
+    5. Datasets
+    6. Job Optimization
+    7. EDA using PySpark
+    8. Spark MLib
+    9. Deployment to cluster Spark Streaming
+2. Apache Spark languages
+    1. Scala
+    2. Spark Java
+    3. PySpark
+    4. R
+3. Connecting DBs with Spark
+4. Apache Spark Tools
+    1. Databricks
+    2. Azure Synapse Analytics
+    3. Amazon EMR
+    4. GCP Cloud Dataproc
+    5. AWS Glue
+
+### 03. Stream/Real-Time Processing
+
+1. Apache Kafka for streaming
+2. Rabbit MQ for Message queuing
+3. Apache Airflow
+
+#### 01. Apache Kafka
+
+1. Spark Streaming using Kafka
+    1. Spark-Kafka Integration
+    2. Setting Up Kafka Producer & Consumer
+    3. Kafka Connect API
+    4. MapReduce
+
+#### 02. Apache Airflow
