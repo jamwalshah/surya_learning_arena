@@ -89,6 +89,12 @@ pip install tensorflow keras
 pip install nltk factor-analyzer 
 ```
 
+## Python Generative AI (Gen AI)
+
+```python
+pip install transformers datasets tokenizers accelerate huggingface_hub docling 
+```
+
 ## Python PostGres
 
 ```python
