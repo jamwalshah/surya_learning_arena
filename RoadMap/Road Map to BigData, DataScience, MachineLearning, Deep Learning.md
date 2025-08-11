@@ -223,20 +223,25 @@
 1. 5 V's of Big Data
 2. Background of Big Data
 
-### 01. Data Warehouse
+### 01. Data Warehousing & Data Lakes
 
 1. Data Warehouse Fundamentals
     1. OLAP **vs.** OLTP
     2. Dimension Table **vs.** Fact Table
-    3. Slowly Changing Dimensions (`SCD`s)
-    4. ER Modelling / Dimension Modelling
-    5. ETL vs ELT
-        1. Data Warehousing & Data Lakes
+    3. Data Modelling
+        1. Star Schema **vs.** Snowflake Schema
+        2. Slowly Changing Dimensions (`SCD`s)
+        3. ER Modelling / Dimension Modelling
+    4. ETL vs ELT
+        1. Data Warehouse & Data Lake
         2. Data Warehouse **vs.** Data Lake **vs.** Data Mart
-2. Data Warehouse Tools
-    1. Apache Hive Warehousing
-    2. Azure DataLake Storage
-    3. Delta Live Tables (DLT)
+    5. Medallion Architecture
+    6. Batch Processing **vs.** Stream Processing
+    7. Streaming Tables and Materialized Views
+2. Data Warehouse Tools/Frameworks
+    1. Delta Live Tables (DLT) Framework
+    2. Apache Hive Warehousing
+    3. Azure DataLake Storage
     4. SnowFlake
     5. Google BigQuery
     6. Amazon RedShift
@@ -245,7 +250,6 @@
 
 1. Apache Hadoop
 2. Apache Spark
-3. Apache Flink
 
 #### 01. Apache Hadoop
 
@@ -314,8 +318,8 @@
 ### 03. Stream/Real-Time Processing
 
 1. Apache Kafka for streaming
-2. Rabbit MQ for Message queuing
-3. Apache Airflow
+2. Apache Flink
+3. Rabbit MQ for Message queuing
 
 #### 01. Apache Kafka
 
@@ -324,6 +328,39 @@
     2. Setting Up Kafka Producer & Consumer
     3. Kafka Connect API
     4. MapReduce
+
+#### 02. Apache Flink
+
+- TBD
+
+#### 03. Rabbit MQ
+
+- TBD
+
+### 04. Data Orchestration
+
+1. Schedulers
+
+#### 01. Data Orchestration Tools
+
+1. Pre-UNIX / Manual Era
+    1. Manual Trigger based workflows
+2. Early Computing Schedulers
+    1. CRON (Linux/UNIX based)
+    2. Windows Task Scheduler (`WTS`)
+    3. AutoSys (by Broadcom)
+    4. Control-M (by BMC)
+    5. Informatica (includes orchestration + ETL)
+3. Data & Open-Source Renaissance
+    1. Luigi (by Spotify, python-based DAGs)
+    2. Apache Oozie (Hadoop focused, XML based)
+    3. Apache Azkaban (by Linkedin, Hadoop focused)
+4. Modern Data Orchestration
+    1. Apache Airflow (most-popular, Python, DAG-based)
+    2. Prefect (modern Python orchestration, cloud-native)
+    3. Dagster (type-safe, development-focused orchestration)
+    4. Mage (simplified, modern Python orchestration)
+    5. Argo workflows (Kubernetes-native workflows)
 
 #### 02. Apache Airflow
 
@@ -370,16 +407,31 @@
     3. Helm Charts for Kubernetes deployment
 10. Airflow using cloud
     1. Astronomer
-    2. Amazon MWAA
+    2. Amazon Managed Workflows for Apache Airflow (`MWAA`)
     3. Google Compose
 
-### 04. ETL Data Pipelines
+#### 03. Prefect
 
-- Data Warehousing for ETL Data Pipeline
-- Data Lake for ETL Data Pipeline
-- Apache Hive, Apache Airflow, Apache Beam
+#### 04. Dagster
 
-#### 01. ETL Tools
+#### 05. Mage
+
+#### 06. Argo workflows
+
+### 05. ETL Data Pipelines
+
+1. Data Warehousing for ETL Data Pipeline
+2. Data Lake for ETL Data Pipeline
+3. Data Pipeline Stages
+    1. Data Ingestion
+    2. Data Transformation
+    3. Data Quality
+    4. Data Visualization
+    5. Machine Learning (`ML`) Lifecycle
+
+- Apache Beam
+
+#### 01. ETL Tools as per stages
 
 1. Data Ingestion
     - Airbyte
@@ -388,34 +440,62 @@
 2. Data Transformation
     - dbt (Data Build Tool)
     - Spark/PySpark
-3. Data Visualization
+3. Data Quality
+    - Great Expectations (`GX`)
+    - Soda
+4. Data Visualization
     - Tableau
     - Power BI
     - Looker
-4. Data Quality
-    - Quick Expectations
-    - Soda
-5. ML Lifecycle
+5. Machine Learning (`ML`) Lifecycle
       - mlflow
 
-#### 02. Data Orchestration Tools
+### 06. Deployment and Productionization
 
-1. Pre-UNIX / Manual Era
-    1. Manual Trigger based workflows
-2. Early Computing Schedulers
-    1. CRON (Linux/UNIX based)
-    2. Windows Task Scheduler (`WTS`)
-    3. AutoSys (by Broadcom)
-    4. Control-M (by BMC)
-    5. Informatica (includes orchestration + ETL)
-3. Data & Open-Source Renaissance
-    1. Luigi (by Spotify, python-based DAGs)
-    2. Apache Oozie (Hadoop focused, XML based)
-    3. Apache Azkaban (by Linkedin, Hadoop focused)
-4. Modern Data Orchestration
-    1. Apache Airflow (most-popular, Python, DAG-based)
-    2. Prefect (modern Python orchestration, cloud-native)
-    3. Dagster (type-safe, development-focused orchestration)
-    4. Mage (simplified, modern Python orchestration)
-    5. Argo workflows (Kubernetes-native workflows)
+1. Docker vs. Kubernetes
+2. Deployment patterns for data pipelines
+3. CI/CD for ETL
+4. Secrets, configs, infrastructure
 
+### 08. DataOps and Observability
+
+#### 01. Data Validation and Quality Tools
+
+1. Great Expectations (`GX`)
+2. Soda SQL
+3. Amazon Deequ
+
+#### 02. Data Lineage and Cataloging
+
+1. Amundsen
+2. OpenMetadata
+3. Datahub
+
+#### 03. Monitoring and Observability
+
+1. Job Level Monitoring
+    1. Prometheus
+    2. Grafana
+2. Workflow Monitoring
+    1. Airflow
+    2. StatsD metrics
+3. Data Observability
+    1. Datadog
+    2. Monte Carlo
+
+#### 04. Alerting
+
+1. Airflow Alerting
+2. PagerDuty
+3. Slack integrations
+
+### 07. Advanced Data Engineering Tools
+
+- Tools
+    - Learn some tools from Modern Data Stack, focus on core use case of that tool
+        - DBT - Data Build Tool
+- Deployment
+    - Security, Networking & deployment
+    - Kubernetes, Docker
+- Use Cases
+    - look at customer success story/case study of cloud platforms such as AWS, Azure, GCP, and observe how they solved some particular problem using some tool/service
