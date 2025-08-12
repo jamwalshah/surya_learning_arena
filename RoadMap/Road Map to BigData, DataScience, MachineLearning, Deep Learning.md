@@ -289,14 +289,14 @@
         4. RDD Persistence
         5. Removing Data
         6. RDD Operations
-            1. Transformations: map, flatMap, filter, etc.
-            2. Actions: count, reduce, reduceByKey, etc.
+            1. Transformations: `map`, flatMa`p, fi`lter, etc.
+            2. Actions: `count`, `reduce`, `reduceByKey`, etc.
         7. Shared Variables
             1. Broadcast
             2. Aggregators
     4. Spark DataFrames / Spark SQL
         1. Operations on DataFrames
-            - count, printSchema, show, select, filter, groupBy, registerTempTable
+            - `count`, `printSchema`, `show`, `select`, `filter`, `groupBy`, `registerTempTable`
     5. Datasets
     6. Job Optimization
     7. EDA using PySpark
@@ -323,11 +323,37 @@
 
 #### 01. Apache Kafka
 
-1. Spark Streaming using Kafka
+1. Kafka Fundamentals
+    1. Pub-Sub Messaging Pattern
+    2. Kafka Use cases in Data Engineering
+    3. Kafka Architecture
+2. Kafka Core Components
+    1. Producers and Consumers
+    2. Topics and Partitions
+    3. Brokers and Clusters
+    4. Zookeeper (in Older versions)
+    5. KRaft model (in newer versions)
+    6. Kafka Retention and Offset Management
+3. Kafka Setup and Operations
+    1. Installing Kafka (Local/Docker)
+    2. Running Kafka and Zookeeper
+    3. CLI tools for Topics, Consumers, etc.
+    4. Kafka Configuration and Tuning
+4. Kafka Ecosystem Tools
+    1. Kafka Connect: Integration with Databases, S3, ElasticSearch, etc.
+    2. Kafka Streams API
+    3. Schema Registry: Avro, Protobuf support
+    4. Kafka REST Proxy
+5. Kafka with Spark
     1. Spark-Kafka Integration
-    2. Setting Up Kafka Producer & Consumer
-    3. Kafka Connect API
-    4. MapReduce
+    2. Setting Up Kafka Producer & Consumer in Spark
+    3. Consuming Kafka Streams using Spark Structured Streaming
+    4. Exactly-once Semantics
+    5. Check-pointing in Spark
+6. Kafka Monitoring and Observability
+    1. Kafka Manager
+    2. Prometheus and Grafana for Kafka Metrics
+    3. Alerting and Lag Monitoring
 
 #### 02. Apache Flink
 
@@ -365,50 +391,48 @@
 #### 02. Apache Airflow
 
 1. Airflow Fundamentals
-    1. Use cases: ETL, ML Pipelines, reporting, scheduling
+    1. Use cases: ETL, ML Pipelines, Reporting, Scheduling
 2. Airflow Architecture
     1. Scheduler
+        1. Scheduling vs. Triggering
+        2. Trigger rules
     2. Executor
     3. Webserver
     4. Metadata database
     5. Workers
 3. Installation & Setup
 4. Directed Acyclic Graphs (DAGs)
-    1. Defining: `dag_id`, `schedule_interval`, `start_date`, `catchup`, `default_args`
-    2. Task Dependencies: `>>`, `<<`, `.set_downstream()`, `set_upstream()`
-    3. Scheduling vs. Triggering
-    4. AirFlow Scheduler
-    5. Trigger rules and retries
-    6. Task instance states
-    7. Parallelism and Concurrency
-    8. Pooling, Queuing, Priority Weights
-    9. SubDAGs (why they're often avoided)
-5. Operators and Tasks
-    1. Types of Operators: `BashOperator`, `PythonOperator`, `DummyOperator`, `EmailOperator`, `BranchPythonOperator`
+    1. DAG parameters: `dag_id`, `schedule_interval`, `start_date`, `catchup`, `default_args`
+    2. Defining Task Dependencies: `>>`, `<<`, `.set_downstream()`, `set_upstream()`
+5. Core Concepts
+    1. Operators: `BashOperator`, `PythonOperator`, `DummyOperator`, `EmailOperator`, `BranchPythonOperator`, etc.
     2. Sensors: `TimeSensor`, `FileSensor`, `ExternalTaskSensor`
-    3. Tasks
-    4. Custom Operators and Tasks
-6. Variables, Connections and Cross-Communications (`XComs`)
+    3. Cross-Communications (`XComs`): Basics, `xcom_push`, `xcom_pull`, Cross-Task Communication
+6. Variables and Connections
     1. Setting Up and using Connections (Database, AWS, Azure, etc.)
     2. Secrets Management (Vault, etc.)
-    3. Cross-Communications (`XComs`) Basics
-    4. using `xcom_push` and `xcom_pull`
-    5. Cross-Communications best practices
-7. Monitoring and Logging
-    1. Airflow UI
-    2. Email Notification and alerts
-    3. Audit Trails and SLA misses
-8. Error Handling and Debugging
-    1. Retry strategies, `max_retries` and `on_failure_callback` functions
-    2. Debugging DAGs locally, Skipped or failed task recovery
-9. Deployment & CI/CD
-    1. using git for DAG versioning
-    2. deploying with Docker & Docker Compose
-    3. Helm Charts for Kubernetes deployment
-10. Airflow using cloud
-    1. Astronomer
-    2. Amazon Managed Workflows for Apache Airflow (`MWAA`)
-    3. Google Compose
+7. Error Handling and Debugging
+    1. Task instance states
+    2. Retry strategies, `max_retries` and `on_failure_callback` functions
+    3. Debugging DAGs locally, Skipped or failed task recovery
+8. Monitoring and Logging
+    1. Airflow UI: Gantt Charts, Tree View, Logs
+    2. SLA Misses, Email Alerts
+9. Advanced Concepts
+    1. Parallelism and Concurrency
+    2. Pooling, Queuing, Priority Weights
+    3. SubDAGs (why they're often avoided)
+10. Deployment & CI/CD
+    1. Version Control and Workflow
+        1. git for DAG versioning
+        2. Git-based deployment flows
+    2. Containerization
+        1. Docker & Docker Compose
+        2. Helm Charts for Kubernetes
+    3. Managed Cloud providers for
+        1. Astronomer
+        2. Amazon Managed Workflows for Apache Airflow (`MWAA`)
+        3. Google Cloud Compose
 
 #### 03. Prefect
 
@@ -442,7 +466,7 @@
     - Spark/PySpark
 3. Data Quality
     - Great Expectations (`GX`)
-    - Soda
+    - Soda SQL
 4. Data Visualization
     - Tableau
     - Power BI
