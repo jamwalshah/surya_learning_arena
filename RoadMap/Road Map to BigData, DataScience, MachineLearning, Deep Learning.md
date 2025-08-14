@@ -332,7 +332,7 @@
     2. Topics and Partitions
     3. Brokers and Clusters
     4. Zookeeper (in Older versions)
-    5. KRaft model (in newer versions)
+    5. KRaft (Kafka Raft) mode (in newer versions)
     6. Kafka Retention and Offset Management
 3. Kafka Setup and Operations
     1. Installing Kafka (Local/Docker)
@@ -357,7 +357,44 @@
 
 #### 02. Apache Flink
 
-- TBD
+1. Apache Flink Fundamentals
+    1. Flink vs. Spark Streaming vs. Kafka Streams
+    2. Use cases: Real-Time Analytics, Event-Driven Apps, ETL
+2. Flink Architecture
+    1. JobManager and TaskManager
+    2. Flink Runtime and DataFlow Model
+    3. Event TIme vs. Processing Time
+    4. Watermarks and Late Data Handling
+    5. Stateful vs, Stateless Processing
+    6. Checkpoints and Savepoints
+3. Flink Programming APIs
+    1. DataStream API (for unbounded streams)
+    2. DataSet API (for bounded/batch data - legacy)
+    3. Table API and Flink SQL
+    4. CEP (Complex Event Processing) API
+4. Integrations and Connectors
+    1. Kafka (Source/Sink)
+    2. Filesystem, JDBC, Amazon S3, HDFS, ElasticSearch, etc.
+    3. CDC (Change Data Capture) with Flink
+    4. Flink with Apache Pulsar
+5. Fault Tolerance and State Management
+    1. RocksDB State Backend
+    2. Exactly-once Processing Guarantees
+    3. Savepoints for Stateful Recovery
+    4. Distributed Snapshots
+6. Flink Deployment
+    1. Local and Standalone Cluster
+    2. YARN, Kubernetes, and Mesos
+    3. Integration with Docker
+    4. Flink on AWS, Azure or GCP
+7. Monitoring and Observability
+    1. Flink UI
+    2. Logs and Metrics
+    3. Integration with Prometheus and Grafana
+8. Tools and Ecosystem
+    1. Apache Beam (runs on Flink runner)
+    2. Stateful Functions (Flink sub-project for serverless)
+    3. Ververica Platform (Commercial Flink offering)
 
 #### 03. Rabbit MQ
 
@@ -452,8 +489,8 @@
     3. Data Quality
     4. Data Visualization
     5. Machine Learning (`ML`) Lifecycle
-
-- Apache Beam
+4. Engine-Agnostic ETL Frameworks
+    1. Apache Beam
 
 #### 01. ETL Tools as per stages
 
@@ -513,7 +550,7 @@
 2. PagerDuty
 3. Slack integrations
 
-### 07. Advanced Data Engineering Tools
+### 09. Advanced Data Engineering Tools
 
 - Tools
     - Learn some tools from Modern Data Stack, focus on core use case of that tool
